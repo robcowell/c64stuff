@@ -1,0 +1,22 @@
+the vic chip sees 16k blocks of ram, so there are 4 vic banks, the default one is $0000-$3fff
+
+...where $0000-$03ff is used for zero page, stack, etc.,
+
+$0400-$07f7 is the default screen memory location
+
+$07f8-$07ff is the default sprite pointer location (tells the vic chip where to look for sprite graphics data, each sprite is 63 bytes so they use 64 byte chunks, if the graphics for sprite 0 is at $2000, you must set $07f8 to $2000/#$40=#$80)
+
+$0801 is where basic programs start
+
+$1000-$1fff ram is invisible to the vic chip because it sees the two ROM charsets there, that's why this part of ram is often used for music (or code)
+
+So basically in the default vic bank you can put graphics at $0800-$0fff and $2000-$3fff - the next bank doesn't contain the ROM charsets, so you can use all of it for graphics.
+
+Advanced art studio file specs:
+
+Load address: $2000 - $471F
+$2000 - $3F3F Bitmap data
+$3F40 - $4327 Screen RAM (copy to $0400->)
+$4328 Border colour
+$4329 Background colour
+$4338 - $471F Colour RAM (copy to $d800->)

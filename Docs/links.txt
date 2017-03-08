@@ -1,0 +1,10 @@
+C64 Programmer's Reference Guide: http://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference.htm
+
+Text file version: http://www.zimmers.net/cbmpics/cbm/c64/c64prg.txt
+
+Mapping the C64 (pdf): http://www.jamtronix.com/files/c64_docs/mappingthe64.pdf
+
+Mapping the C64 (text):
+http://unusedino.de/ec64/technical/project64/mapping_c64.html
+
+Also, Codebase64 is awesome: http://codebase64.org/doku.php
