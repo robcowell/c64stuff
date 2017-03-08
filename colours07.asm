@@ -20,6 +20,8 @@
 	
 	sei		;disable interrupts
 
+	; here we shift BASIC and Kernal ROM routines out the way
+	; so we can use the RAM space at the addresses they used.
 	lda #$35
 	sta $01
 
@@ -37,7 +39,7 @@
 	
 	ldx #$00    ; zero X register
 
-setpic:
+setpic
 ;	start copying screen data - screen ram
 	lda $bF40,x
 	sta $8400,x
