@@ -7,6 +7,9 @@
 	;Advanced art studio file specs:
 	;Load address: $a000 - $c71F
 	
+	; Load address needs to be in same address range as the VIC bank
+	; that you're going to copy it to, according to Vanja
+
 	;$a000 - $bF3F Bitmap data
 	;$bF40 - $c327 Screen RAM (copy to VIC Bank start address + $0400)
 	;$c328 Border colour
