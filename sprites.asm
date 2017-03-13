@@ -2,36 +2,58 @@
     .byte $0C,$08,$0A,$00,$9E,$20,$32,$30,$36,$34,$00,$00,$00,$00,$00
     
     *=$2000
-    .binary 'calvin.prg',2
+    .binary 'calvin.prg',2		;sprites exported from SpritePad
     
     *=$0810		;code at $0810
 	
 	sei		;disable interrupts
+	
+	;Sprite palettes
 
-hobbes_background_color   = $0C
-hobbes_multicolor_1       = $00
-hobbes_multicolor_2       = $01
-hobbes_color              = $08
+sprite_background_color   = $0C
+sprite_multicolor_1       = $00
+sprite_multicolor_2       = $01
+
+sprite1_color              = $08
+sprite2_color              = $07
+sprite3_color             = $02
+sprite_overlay_color     = $0A
+
+
 
 init_screen      ldx #$00     ; set X to zero (black color code)
                  stx $d021    ; set background color
                  stx $d020    ; set border color
                  jsr clear
                  
-setup_sprites   lda #$07
-				sta $d015	  ; turn on sprite 1 + 2 + 3
+setup_sprites   lda #$f
+				sta $d015	  ; turn on sprite 1 + 2 + 3 + 4
 				sta $d01c	  ; multicolor mode
 				
 				
-				lda #hobbes_background_color 
+				lda #sprite_background_color 
 				sta $d021
-				lda #hobbes_multicolor_1
+				
+				lda #sprite_multicolor_1
 				sta $d025
-				lda #hobbes_multicolor_2 
+				
+				lda #sprite_multicolor_2 
 				sta $d026
-				lda #hobbes_color
-				sta $d027
-
+				
+				lda #sprite2_color
+				sta $d027                                                    
+				
+				lda #sprite3_color
+				sta $d029
+				
+				lda #sprite_overlay_color
+				sta $d028
+				
+				lda #sprite_overlay_color
+				sta $d02a
+				
+				
+				
 				; Sprite 1 coords
 				lda #$40
 				sta $d000	  ;x = 40
@@ -40,23 +62,37 @@ setup_sprites   lda #$07
 				; Sprite 2 coords
 				lda #$40
 				sta $d002	  ;x = 40
-				lda #$51
 				sta $d003     ; y=51
 				
 				; Sprite 3 coords
 				lda #$40
 				sta $d004	  ;x = 40
-				lda #$62
-				sta $d005     ; y=60
+				lda #$55
+				sta $d005     ; y=55
 				
-				lda #$80
+				; Sprite 4 coords
+				lda #$40
+				sta $d006	  ;x = 40
+				lda #$55
+				sta $d007     ; y=55
+			
+				;sprite1
+				lda #$81
 				sta $07f8	  ; pointer to sprite data at $2000
 				
-				lda #$88
+				;sprite2
+				lda #$82
 				sta $07f9
 				
-				lda #$90
+				;sprite3
+				lda #$89
 				sta $07fa
+				
+				;sprite4
+				lda #$8a
+				sta $07fb
+				
+				
 				
 				;---
 

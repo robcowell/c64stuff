@@ -1,1 +1,5 @@
-*.prg
+colours07.prg
+sprite2asm.lua
+spritepad.sh
+sprites.prg
+.DS_Store
