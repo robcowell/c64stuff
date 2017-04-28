@@ -1,0 +1,14 @@
+al C:8d2 .draw_sprites
+al C:93a .init_vic
+al C:8d1 .cont4
+al C:8bd .cont3
+al C:8a9 .cont2
+al C:914 .clear
+al C:80b .upstartEnd
+al C:81e .setup_sprites
+al C:86d .WaitStep2
+al C:875 .PlayerMovement
+al C:85a .loop
+al C:895 .cont1
+al C:934 .init_mus
+al C:866 .WaitFrame

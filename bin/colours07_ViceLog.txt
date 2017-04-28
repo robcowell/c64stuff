@@ -1,0 +1,69 @@
+*** VICE Version 2.3.25-r26472_20121030_trunk ***
+OS compiled for: Mac OS X 10.6
+GUI compiled for: COCOA
+CPU compiled for: x86_64
+Compiler used: GCC-4.2.1
+Current OS: 10.12.4
+Current CPU: x86_64 [MacBookPro9,2] [4 CPUs] [4096 MiB RAM]
+ 
+Welcome to x64, the free portable C64 Emulator.
+ 
+Current VICE team members:
+D. Lem, A. Matthies, M. Pottendorfer, S. Trikaliotis, M. van den Heuvel,
+C. Vogelgsang, F. Gennari, D. Kahlin, A. Lankila, Groepaz, I. Korb,
+E. Smith, O. Seibert, M. Sutton, U. Schulz, S. Haubenthal, T. Giesel,
+K. Zsolt.
+ 
+This is free software with ABSOLUTELY NO WARRANTY.
+See the "About VICE" command for more info.
+ 
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/C64/kernal'.
+C64MEM: Kernal rev #3.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/C64/basic'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/C64/chargen'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/PRINTER/mps803'.
+Palette: Loading palette `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/PRINTER/mps803.vpl'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/PRINTER/nl10-cbm'.
+Palette: Loading palette `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/PRINTER/mps803.vpl'.
+NL10: Printer driver initialized.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos1541'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/d1541II'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos1570'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos1571'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos1581'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos2000'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos4000'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos2031'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos2040'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos3040'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos4040'.
+Loading system file `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/DRIVES/dos1001'.
+Drive: Finished loading ROM images.
+MacVideo: machine refresh period=19.9503 ms
+MacVideo: set canvas [0] pixel aspect ratio to 0.936508
+MacVideo: reconfiguring canvas [0]
+MacVideo: setup textures: #1 384 x 272 (was: #0 384 x 272)
+Sound: Available sound devices: coreaudio dummy fs dump wav voc iff aiff mp3 soundmovie
+Keyboard: Loading keymap `/Applications/VICE/x64.app/Contents/MacOS/../Resources/ROM/C64/osx_sym_us.vkm'.
+mac_joy: loaded HID device list with IOHIDManager. found 0 devices
+mac_joy: (auto) found 0 HID devices. HID A='046d:c216:0' B=''
+mac_joy: joystick A not matched!
+mac_joy: (auto) done
+AUTOSTART: Autodetecting image type of `bin/colours07_Compiled.prg'.
+Filesystem Image: Unknown disk image `bin/colours07_Compiled.prg'.
+Tape: Error - Cannot open file `bin/colours07_Compiled.prg'
+AUTOSTART: Loading PRG file `bin/colours07_Compiled.prg' with virtual FS on unit #8.
+AUTOSTART: Resetting the machine to autostart 'COLOURS07_ÃOMPILED.PRG'
+AUTOSTART: Turning Warp mode on
+AUTOSTART: `bin/colours07_Compiled.prg' recognized as program/p00 file.
+Main CPU: starting at ($FFFC).
+Main CPU: RESET.
+Sound: Opened device `coreaudio', speed 44100Hz, fragment size 11ms, buffer size 104ms
+ReSID-FP: 6581R4AR 3789, filter on, sampling rate 44100 Hz with interpolation
+AUTOSTART: Loading program 'COLOURS07_ÃOMPILED.PRG'
+AUTOSTART: Starting program.
+AUTOSTART: Done.
+AUTOSTART: Turning Warp mode off
+Sound: Warning - Buffer drained
+Writing configuration file `/Users/robcowell/Library/Preferences/org.viceteam.x64/vicerc'.
+Sound: Closing device `coreaudio'

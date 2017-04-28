@@ -1,0 +1,18 @@
+User Arguments: usebin=true, afo=true
+parsing
+flex pass 1
+flex pass 2
+Output pass
+  File creation enabled (creating breakpoint file)
+Wrote file: bin/breakpoints.txt
+
+Memory Map
+----------
+$0801-$080c Basic Program
+$0810-$0949 Main code
+$1000-$21c4 Music
+$a000-$dfff Sprites
+
+Writing file: bin/sprites_Compiled.prg
+Writing Vice symbol file: bin/sprites.vs
+Writing Symbol file: bin/sprites.sym

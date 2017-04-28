@@ -1,0 +1,134 @@
+# VICE keyboard mapping file
+#
+# A Keyboard map is read in as patch to the current map.
+#
+# File format:
+# - comment lines start with '#'
+# - keyword lines start with '!keyword'
+# - normal line has 'keysym/scancode row column shiftflag'
+#
+# Keywords and their lines are:
+# '!CLEAR'               clear whole table
+# '!INCLUDE filename'    read file as mapping file
+# '!LSHIFT row col'      left shift keyboard row/column
+# '!RSHIFT row col'      right shift keyboard row/column
+# '!VSHIFT shiftkey'     virtual shift key (RSHIFT or LSHIFT)
+# '!SHIFTL shiftkey'     shift lock key (RSHIFT or LSHIFT)
+# '!UNDEF keysym'        remove keysym from table
+#
+# Shiftflag can have the values:
+# 0      key is not shifted for this keysym/scancode
+# 1      key is shifted for this keysym/scancode
+# 2      left shift
+# 4      right shift
+# 8      key can be shifted or not with this keysym/scancode
+# 16     deshift key for this keysym/scancode
+# 32     another definition for this keysym/scancode follows
+# 64     shift lock
+# 256    key is used for an alternative keyboard mapping
+#
+# Negative row values:
+# 'keysym -1 n' joystick #1, direction n
+# 'keysym -2 n' joystick #2, direction n
+# 'keysym -3 0' first RESTORE key
+# 'keysym -3 1' second RESTORE key
+# 'keysym -4 0' 40/80 column key
+# 'keysym -4 1' CAPS (ASCII/DIN) key
+#
+
+!CLEAR
+!LSHIFT 1 7
+!RSHIFT 6 4
+!VSHIFT RSHIFT
+
+0 1 2 8
+1 1 5 8
+2 2 2 8
+3 2 5 8
+4 3 5 8
+5 3 2 8
+6 1 4 8
+7 2 7 8
+8 2 4 8
+9 3 7 8
+10 7 1 8
+11 3 4 8
+12 7 6 8
+13 1 1 8
+14 1 6 8
+15 2 1 8
+16 3 1 8
+17 2 6 8
+18 7 0 8
+19 7 3 8
+20 1 0 8
+21 1 3 8
+22 2 3 32
+22 6 6 0
+23 2 0 8
+24 6 5 32
+24 5 0 0
+25 4 0 32
+25 3 3 1
+26 3 0 32
+26 2 3 1
+27 5 3 0
+28 3 3 32
+28 6 1 0
+29 4 3 32
+29 4 0 1
+30 6 2 1
+31 4 6 8
+32 3 6 8
+33 5 5 1
+34 4 1 8
+35 5 1 8
+36 0 1 8
+37 5 2 8
+38 4 2 8
+39 3 0 33
+39 7 3 1
+40 4 5 8
+41 6 2 32
+41 5 5 16
+42 6 6 8
+43 5 7 8
+44 6 7 8
+45 4 7 8
+46 4 4 8
+47 5 4 8
+48 5 6 8
+49 7 4 8
+50 7 1 8
+51 0 0 8
+52 6 4 4
+53 7 7 8
+56 1 7 2
+58 7 5 8
+59 7 2 8
+60 6 4 4
+96 0 6 8
+97 0 6 1
+98 0 3 8
+99 0 5 8
+100 0 3 1
+101 6 0 8
+103 6 3 8
+109 6 6 8
+115 6 3 8
+116 6 6 8
+117 0 0 8
+118 0 5 1
+120 0 4 1
+121 6 0 8
+122 0 4 8
+123 0 2 1
+124 0 2 8
+125 0 7 8
+126 0 7 1
+
+#
+# Restore key mappings
+#
+111 -3 0
+

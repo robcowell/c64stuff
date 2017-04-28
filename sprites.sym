@@ -1,0 +1,13 @@
+.label loop=$856
+.label cont1=$891
+.label init_mus=$948
+.label draw_sprites=$8ce
+.label setup_sprites=$81a
+.label PlayerMovement=$871
+.label WaitFrame=$862
+.label init_vic=$94e
+.label cont4=$8cd
+.label cont3=$8b9
+.label cont2=$8a5
+.label clear=$928
+.label WaitStep2=$869
