@@ -1,4 +1,3 @@
-User Arguments: usebin=true, afo=true
 parsing
 flex pass 1
 flex pass 2
@@ -6,11 +5,12 @@ Output pass
 
 Memory Map
 ----------
-$0801-$080c Basic Program
-$0810-$089d Unnamed
-$1000-$5e22 Unnamed
-$a000-$c71f Unnamed
+Default-segment:
+  $0801-$080c Basic Program
+  $0810-$089d Unnamed
+  $1000-$5e22 Unnamed
+  $a000-$c71f Unnamed
 
-Writing file: bin/colours07_Compiled.prg
-Writing Vice symbol file: bin/colours07.vs
-Writing Symbol file: bin/colours07.sym
+Writing prg file: D:\code\C64\bin\colours07_Compiled.prg
+Writing Vice symbol file: D:\code\C64\bin\colours07.vs
+Writing Symbol file: bin\colours07.sym
