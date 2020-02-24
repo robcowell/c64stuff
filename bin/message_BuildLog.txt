@@ -1,0 +1,8 @@
+parsing
+*=$0801  ;SYS 2064
+          ^
+
+Error: Pseudo command 'SYS' not defined
+at line 1, column 11 in message.asm
+
+

@@ -2,7 +2,7 @@
 	BasicUpstart($0810)
 
 *=$1000 "Music"
-	.import binary "Scrambled_Mind.sid",$7E
+	.import binary "FeeltheBass.sid",$7E
 	
 *=$4800 "Sprites"
     .import binary "newsprite.prg",2

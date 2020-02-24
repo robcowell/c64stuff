@@ -1,5 +1,6 @@
-colours07.prg
 sprite2asm.lua
-spritepad.sh
-sprites.prg
+*.sh
+*.prg
 .DS_Store
+*.d64
+*.sym
